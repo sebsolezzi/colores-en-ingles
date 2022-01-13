@@ -1,0 +1,148 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', monospace, sans-serif;
+    font-size: 1.5rem;
+}
+
+:root {
+    --red: #ec0c0c;
+    --orange: #e7820e;
+    --yellow: #e6e614;
+    --green: #3bb40b;
+    --blue: #151bcf;
+    --fuchsia: #ce0178;
+    --purble: #880394;
+    --brown: #795a04;
+    --pink: #ff4eca;
+    --black: #000000;
+    --gray: #57575a;
+    --white: #FFFFFF;
+
+}
+
+.contenedor {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    background: red;
+    background: -webkit-linear-gradient(left, orange, yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+}
+
+.header-h1 {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 4.5rem;
+    background-color: #d3d3d3;
+    margin-bottom: 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    border-style: none;
+    border-radius: 50px;
+}
+.footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .header-h1{
+        font-size: 6.5rem;
+    }
+    .titulo{
+        font-size: 6rem;
+    }
+    .btn {
+        width: 10rem;
+        height: 10rem;
+    }
+    .footer{
+        font-size: 3rem;
+    }
+}
+
+.btn-red {
+    background-color: var(--red);
+}
+
+.btn-orange {
+    background-color: var(--orange);
+}
+
+.btn-yellow {
+    background-color: var(--yellow);
+}
+
+.btn-green {
+    background-color: var(--green);
+}
+
+.btn-blue {
+    background-color: var(--blue);
+}
+
+.btn-fuchsia {
+    background-color: var(--fuchsia);
+}
+
+.btn-purble {
+    background-color: var(--purble);
+}
+
+.btn-brown {
+    background-color: var(--brown);
+}
+
+.btn-pink {
+    background-color: var(--pink);
+}
+
+.btn-black {
+    background-color: var(--black);
+}
+
+.btn-gray {
+    background-color: var(--gray);
+}
+
+.btn-white {
+    background-color: var(--white);
+    border: 1px solid black;
+}
